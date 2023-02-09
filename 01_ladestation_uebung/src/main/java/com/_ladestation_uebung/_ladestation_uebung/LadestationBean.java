@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Random;
 
 public class LadestationBean {
-    private int id;
+    private long id;
     Random rand = new Random();
 
     private int load_kwh = (int) (rand.nextDouble()*75+5);
@@ -18,15 +18,15 @@ public class LadestationBean {
 
 
     //ID (Increases with actualization, TIME (TODAY, RANDOM TIME), LOADED ENERGY kW/h (RANDOM 5 - 80), LOADING TIME (RANDOM 60-6000)
-    public LadestationBean(int id) {
+    public LadestationBean(long id) {
         this.id = id;
     }
     //ID SECTION
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

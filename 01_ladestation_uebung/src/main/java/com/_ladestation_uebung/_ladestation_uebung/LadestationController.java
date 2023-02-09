@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class LadestationController {
     @GetMapping(path = "/lade-station-bean")
     public LadestationBean ladestationBean() {
-            return new LadestationBean(1);
+            return new LadestationBean(100000000000L);
     }
 }
