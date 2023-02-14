@@ -15,8 +15,6 @@ public class Ladevorgang {
     Date date = new Date();
     String date_short = date.toString().substring(0,10);
 
-
-
     //ID (Increases with actualization, TIME (TODAY, RANDOM TIME), LOADED ENERGY kW/h (RANDOM 5 - 80), LOADING TIME (RANDOM 60-6000)
     public Ladevorgang(long id) {
         this.id = id;
@@ -32,7 +30,6 @@ public class Ladevorgang {
     }
 
     //TIME SECTION
-
     public String getDate_short() {
         return date_short;
     }
@@ -65,7 +62,7 @@ public class Ladevorgang {
     public void setLoad_kwh(int load_kwh) {
         this.load_kwh = load_kwh;
     }
-    //TIME SECTION
+    //LOAD_TIME SECTION
     public int getLoad_sec() {
         return load_sec;
     }
